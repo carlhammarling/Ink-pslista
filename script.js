@@ -5,38 +5,9 @@ const input = document.querySelector('.card input');
 
 
 
-//För att kunna spara i local storage behövs en array
-
-const cart = [
-    {
-        id: crypto.randomUUID(),
-        name: 'Mjölk',
-        complete: false,
-    }
-];
-
-
-const loadCart = () => {
-    cart.forEach(item => {
-        document.querySelector('#output')
-    })
-}
-
-
 
 //den här funktionen skapar en ny Item i listan.
 const createItem = (inputValue) => {
-
-        //pusha in i array
-
-        const newItem = {
-            id:crypto.randomUUID(),
-            name: inputValue,
-            complete: false,
-         };
-
-         cart.push(newItem);
-         
 
 
      //bygg ihop ett nytt element, skapa själva elementen var för sig. först en div med class item
@@ -61,15 +32,11 @@ const createItem = (inputValue) => {
      item.appendChild(p)
      item.appendChild(button)
 
-
-
      
 
     return item;
 
 }
-
-
 
 
 
@@ -116,3 +83,50 @@ output.addEventListener('click', (e) => {
     
 })
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// //För att kunna spara i local storage behövs en array
+
+// const cart = [
+//     {
+//         id: crypto.randomUUID(),
+//         name: 'Mjölk',
+//         complete: false,
+//     }
+// ];
+
+
+// const loadCart = () => {
+//     cart.forEach(item => {
+//         document.querySelector('#output')
+//     })
+// }
+
+
+        // //pusha in i array
+
+        // const newItem = {
+        //     id:crypto.randomUUID(),
+        //     name: inputValue,
+        //     complete: false,
+        //  };
+
+        //  cart.push(newItem);
+         
