@@ -74,9 +74,10 @@ output.addEventListener('click', (e) => {
     }
 
     if(e.target.nodeName === 'P') {
-        e.target.style.textDecoration = 'line-through';
+        e.target.classList.toggle('line')
     }
-    if(e.target.nodeName === 'div') {
+    if(e.target.nodeName === 'DIV') {
+        console.log(e.target)
         e.target.querySelector('p').classList.toggle('line')
     }
 
